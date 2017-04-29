@@ -2,8 +2,12 @@
   "name": "bind.ts",
   "version": "1.0.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
+  "description": "Function.prototype.bind with typings for TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "fils": [
+    "lib"
+  ],
   "scripts": {
     "tsc": "tsc",
     "test": "mocha"
