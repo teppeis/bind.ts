@@ -1,0 +1,25 @@
+{
+  "name": "bind.ts",
+  "version": "1.0.0",
+  "author": "Teppei Sato <teppeis@gmail.com>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/teppeis/bind.ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teppeis/bind.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teppeis/bind.ts/issues"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.3.0",
+    "typescript": "^2.3.2"
+  }
+}
