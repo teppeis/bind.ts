@@ -9,9 +9,10 @@
     "lib"
   ],
   "scripts": {
+    "clean": "rimraf lib test/*.js",
     "mocha": "mocha",
     "prepublishOnly": "run-s test",
-    "test": "run-s tsc mocha",
+    "test": "run-s clean tsc mocha",
     "tsc": "run-s tsc:src tsc:test",
     "tsc:src": "tsc",
     "tsc:test": "tsc test/index.ts"
@@ -21,6 +22,7 @@
     "@types/node": "^7.0.14",
     "mocha": "^3.3.0",
     "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
     "typescript": "^2.3.2"
   },
   "homepage": "https://github.com/teppeis/bind.ts#readme",
