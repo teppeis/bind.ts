@@ -10,9 +10,11 @@
   ],
   "scripts": {
     "mocha": "mocha",
-    "tsc": "tsc",
+    "prepublishOnly": "run-s test",
+    "tsc": "run-s tsc:src tsc:test",
+    "tsc:src": "tsc",
     "tsc:test": "tsc test/index.ts",
-    "test": "run-s tsc:test mocha"
+    "test": "run-s tsc mocha"
   },
   "homepage": "https://github.com/teppeis/bind.ts#readme",
   "repository": {
