@@ -57,10 +57,7 @@ jobs:
           name: Test
           command: |
             mkdir -p $TEST_REPORTS
-            # Will be fixed in yarn v0.23
-            # https://github.com/yarnpkg/yarn/pull/2843
-            # yarn run circleci
-            npm run circleci
+            yarn test
       - save_cache:
           key: v{{ .Environment.CIRCLE_CACHE_VERSION }}-yarn-lock-{{ checksum "yarn.lock" }}-{{ .Environment.CIRCLE_JOB }}
           paths:
