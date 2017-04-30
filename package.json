@@ -1,7 +1,7 @@
 {
   "name": "bind.ts",
   "description": "Function.prototype.bind with typings for TypeScript",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Teppei Sato <teppeis@gmail.com>",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
