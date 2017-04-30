@@ -9,8 +9,10 @@
     "lib"
   ],
   "scripts": {
+    "mocha": "mocha",
     "tsc": "tsc",
-    "test": "mocha"
+    "tsc:test": "tsc test/index.ts",
+    "test": "run-s tsc:test mocha"
   },
   "homepage": "https://github.com/teppeis/bind.ts#readme",
   "repository": {
@@ -23,7 +25,10 @@
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.14",
     "mocha": "^3.3.0",
+    "npm-run-all": "^4.0.2",
     "typescript": "^2.3.2"
   }
 }
