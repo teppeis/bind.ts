@@ -1,20 +1,27 @@
 {
   "name": "bind.ts",
+  "description": "Function.prototype.bind with typings for TypeScript",
   "version": "1.1.0",
   "author": "Teppei Sato <teppeis@gmail.com>",
-  "description": "Function.prototype.bind with typings for TypeScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "fils": [
+  "files": [
     "lib"
   ],
   "scripts": {
     "mocha": "mocha",
     "prepublishOnly": "run-s test",
+    "test": "run-s tsc mocha",
     "tsc": "run-s tsc:src tsc:test",
     "tsc:src": "tsc",
-    "tsc:test": "tsc test/index.ts",
-    "test": "run-s tsc mocha"
+    "tsc:test": "tsc test/index.ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.14",
+    "mocha": "^3.3.0",
+    "npm-run-all": "^4.0.2",
+    "typescript": "^2.3.2"
   },
   "homepage": "https://github.com/teppeis/bind.ts#readme",
   "repository": {
@@ -25,12 +32,5 @@
     "url": "https://github.com/teppeis/bind.ts/issues"
   },
   "keywords": [],
-  "license": "MIT",
-  "devDependencies": {
-    "@types/mocha": "^2.2.41",
-    "@types/node": "^7.0.14",
-    "mocha": "^3.3.0",
-    "npm-run-all": "^4.0.2",
-    "typescript": "^2.3.2"
-  }
+  "license": "MIT"
 }
