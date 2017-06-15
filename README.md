@@ -1,5 +1,7 @@
 bind.ts
 ====
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/bind.ts.svg)](https://greenkeeper.io/)
 Function.prototype.bind with typings for TypeScript
 
 [![npm version][npm-image]][npm-url]
