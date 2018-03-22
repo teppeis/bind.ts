@@ -49,7 +49,7 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 [npm-downloads-image]: https://img.shields.io/npm/dm/bind.ts.svg
 [travis-image]: https://img.shields.io/travis/teppeis/bind.ts/master.svg
 [travis-url]: https://travis-ci.org/teppeis/bind.ts
-[circleci-image]: https://circleci.com/gh/teppeis/bind.ts.svg?style=svg
+[circleci-image]: https://circleci.com/gh/teppeis/bind.ts.svg?style=shield
 [circleci-url]: https://circleci.com/gh/teppeis/bind.ts
 [appveyor-image]: https://ci.appveyor.com/api/projects/status/
 [appveyor-url]: https://ci.appveyor.com/project/teppeis/bind.ts/branch/master
