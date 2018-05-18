@@ -7,8 +7,8 @@
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.0.tgz#b3c8e69f038835db1a7fdc0b3d879fc50506e29e"
 
 "@types/node@^8.10.15":
-  version "8.10.15"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.15.tgz#3ce3cdf6ee1846a9db0c0f52275c14bf0cd67f67"
+  version "8.10.16"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.16.tgz#96fadb371748845a0c8ea970a565330efb0a67d5"
 
 ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   version "3.2.1"
