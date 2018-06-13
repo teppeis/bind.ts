@@ -18,7 +18,7 @@
     "tsc:test": "tsc test/index.ts"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.1",
+    "@types/mocha": "^5.2.2",
     "@types/node": "^8.10.19",
     "mocha": "^5.2.0",
     "npm-run-all": "^4.1.3",
