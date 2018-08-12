@@ -6,9 +6,9 @@
   version "5.2.5"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.5.tgz#8a4accfc403c124a0bafe8a9fc61a05ec1032073"
 
-"@types/node@^8.10.24":
-  version "8.10.24"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.24.tgz#302a8f0c00bd1bf364471b6687258617c5d410fc"
+"@types/node@^8.10.25":
+  version "8.10.25"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.25.tgz#801fe4e39372cef18f268db880a5fbfcf71adc7e"
 
 ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   version "3.2.1"
