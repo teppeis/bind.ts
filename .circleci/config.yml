@@ -2,9 +2,9 @@ workflows:
   version: 2
   node-multi-build:
     jobs:
-      - node-v4
       - node-v6
       - node-v8
+      - node-v10
 
 version: 2
 jobs:
@@ -57,10 +57,6 @@ jobs:
           # path: {{ .Environment.TEST_REPORTS }}
           path: /tmp/test-reports
 
-  node-v4:
-    <<: *node-base
-    docker:
-      - image: node:4@sha256:fab73fccce5abc3fade13a99179884a306aa6c5292a2fc11833ee25ca15c1f85
   node-v6:
     <<: *node-base
     docker:
@@ -69,3 +65,7 @@ jobs:
     <<: *node-base
     docker:
       - image: node:8@sha256:cd8ebd022c01f519eb58a98fcbb05c1d1195ac356ef01851036671ec9e9d5580
+  node-v10:
+    <<: *node-base
+    docker:
+      - image: node:10

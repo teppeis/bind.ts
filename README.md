@@ -1,5 +1,5 @@
-bind.ts
-====
+# bind.ts
+
 Function.prototype.bind with typings for TypeScript
 
 [![npm version][npm-image]][npm-url]
@@ -13,7 +13,7 @@ TypeScript always returns `any` for `bind()`.
 
 ```typescript
 function foo(a: number, b: number): string {
-    return `${this.msg}: ${a + b}`;
+  return `${this.msg}: ${a + b}`;
 }
 // bar is `any`!
 const bar = foo.bind({msg: 'hello'}, 10);
@@ -38,7 +38,7 @@ bar('anything');
 
 ## Limitation
 
-The maximum number of arguments of the function is ***5***.
+The maximum number of arguments of the function is **_5_**.
 
 ## License
 
@@ -55,7 +55,7 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 [appveyor-url]: https://ci.appveyor.com/project/teppeis/bind.ts/branch/master
 [deps-image]: https://img.shields.io/david/teppeis/bind.ts.svg
 [deps-url]: https://david-dm.org/teppeis/bind.ts
-[node-version]: https://img.shields.io/badge/Node.js%20support-v4,v6,v8-brightgreen.svg
+[node-version]: https://img.shields.io/badge/Node.js%20support-v6,v8,v10-brightgreen.svg
 [coverage-image]: https://img.shields.io/coveralls/teppeis/bind.ts/master.svg
 [coverage-url]: https://coveralls.io/github/teppeis/bind.ts?branch=master
 [license]: https://img.shields.io/npm/l/bind.ts.svg
