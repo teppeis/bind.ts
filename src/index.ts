@@ -1,24 +1,9 @@
-function bind<R, T>(f: (this: T) => R, thisArg: T): () => R;
-function bind<R, T, A>(f: (this: T, _0: A) => R, thisArg: T): (_0: A) => R;
-function bind<R, T, A>(f: (this: T, _0: A) => R, thisArg: T, _0: A): () => R;
-function bind<R, T, A, B>(f: (this: T, _0: A, _1: B) => R, thisArg: T): (_0: A, _1: B) => R;
-function bind<R, T, A, B>(f: (this: T, _0: A, _1: B) => R, thisArg: T, _0: A): (_1: B) => R;
-function bind<R, T, A, B>(f: (this: T, _0: A, _1: B) => R, thisArg: T, _0: A, _1: B): () => R;
-function bind<R, T, A, B, C>(f: (this: T, _0: A, _1: B, _2: C) => R, thisArg: T): (_0: A, _1: B, _2: C) => R;
-function bind<R, T, A, B, C>(f: (this: T, _0: A, _1: B, _2: C) => R, thisArg: T, _0: A): (_1: B, _2: C) => R;
-function bind<R, T, A, B, C>(f: (this: T, _0: A, _1: B, _2: C) => R, thisArg: T, _0: A, _1: B): (_2: C) => R;
-function bind<R, T, A, B, C>(f: (this: T, _0: A, _1: B, _2: C) => R, thisArg: T, _0: A, _1: B, _2: C): () => R;
-function bind<R, T, A, B, C, D>(f: (this: T, _0: A, _1: B, _2: C, _3: D) => R, thisArg: T): (_0: A, _1: B, _2: C, _3: D) => R;
-function bind<R, T, A, B, C, D>(f: (this: T, _0: A, _1: B, _2: C, _3: D) => R, thisArg: T, _0: A): (_1: B, _2: C, _3: D) => R;
-function bind<R, T, A, B, C, D>(f: (this: T, _0: A, _1: B, _2: C, _3: D) => R, thisArg: T, _0: A, _1: B): (_2: C, _3: D) => R;
-function bind<R, T, A, B, C, D>(f: (this: T, _0: A, _1: B, _2: C, _3: D) => R, thisArg: T, _0: A, _1: B, _2: C): (_3: D) => R;
-function bind<R, T, A, B, C, D>(f: (this: T, _0: A, _1: B, _2: C, _3: D) => R, thisArg: T, _0: A, _1: B, _2: C, _3: D): () => R;
-function bind<R, T, A, B, C, D, E>(f: (this: T, _0: A, _1: B, _2: C, _3: D, _4: E) => R, thisArg: T): (_0: A, _1: B, _2: C, _3: D, _4: E) => R;
-function bind<R, T, A, B, C, D, E>(f: (this: T, _0: A, _1: B, _2: C, _3: D, _4: E) => R, thisArg: T, _0: A): (_1: B, _2: C, _3: D, _4: E) => R;
-function bind<R, T, A, B, C, D, E>(f: (this: T, _0: A, _1: B, _2: C, _3: D, _4: E) => R, thisArg: T, _0: A, _1: B): (_2: C, _3: D, _4: E) => R;
-function bind<R, T, A, B, C, D, E>(f: (this: T, _0: A, _1: B, _2: C, _3: D, _4: E) => R, thisArg: T, _0: A, _1: B, _2: C): (_3: D, _4: E) => R;
-function bind<R, T, A, B, C, D, E>(f: (this: T, _0: A, _1: B, _2: C, _3: D, _4: E) => R, thisArg: T, _0: A, _1: B, _2: C, _3: D): (_4: E) => R;
-function bind<R, T, A, B, C, D, E>(f: (this: T, _0: A, _1: B, _2: C, _3: D, _4: E) => R, thisArg: T, _0: A, _1: B, _2: C, _3: D, _4: E): () => R;
+function bind<T, V, R extends any[]>(f: (this: T, ...args: R) => V, thisArg: T): (...args: R) => V;
+function bind<T, V, R extends any[], A0>(f: (this: T, a0: A0, ...args: R) => V, thisArg: T, a0: A0): (...args: R) => V;
+function bind<T, V, R extends any[], A0, A1>(f: (this: T, a0: A0, a1: A1, ...args: R) => V, thisArg: T, a0: A0, a1: A1): (...args: R) => V;
+function bind<T, V, R extends any[], A0, A1, A2>(f: (this: T, a0: A0, a1: A1, a2: A2, ...args: R) => V, thisArg: T, a0: A0, a1: A1, a2: A2): (...args: R) => V;
+function bind<T, V, R extends any[], A0, A1, A2, A3>(f: (this: T, a0: A0, a1: A1, a2: A2, a3: A3, ...args: R) => V, thisArg: T, a0: A0, a1: A1, a2: A2, a3: A3): (...args: R) => V;
+function bind<T, V, R extends any[], A0, A1, A2, A3, A4>(f: (this: T, a0: A0, a1: A1, a2: A2, a3: A3, a4: A4, ...args: R) => V, thisArg: T, a0: A0, a1: A1, a2: A2, a3: A3, a4: A4): (...args: R) => V;
 function bind(f: Function, thisArg: any, ...args: any[]) {
   return f.bind.apply(f, [thisArg, ...args]);
 }
