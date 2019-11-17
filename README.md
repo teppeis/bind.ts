@@ -1,3 +1,10 @@
+## DEPRECATED: Use `--strictBindCallApply` instead since TypeScript 3.2
+
+Finally TypeScript 3.2 officially supports this feature!!!
+
+See: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-2.html#strictbindcallapply
+
+----
 # bind.ts
 
 Function.prototype.bind with typings for TypeScript
